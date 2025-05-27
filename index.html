@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameDev & Esports Club</title>
+  <link rel="stylesheet" href="styles_gdes.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#Hero">HOME</a></li>
+        <li><a href="#About">ABOUT</a></li>
+        <li><a href="#Games">GAMES</a></li>
+        <li><a href="#News">NEWS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <img src="images/logo.png" alt="GameDev Club Logo" class="logo" />
+  </header>
+
+  <section class="hero" id="Hero">
+    <div class="hero-text">
+      <h1>SHADOW REALM</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button id="playnow">PLAY NOW</button>
+    </div>
+  </section>
+
+  <section class="about" id="About">
+    <h2>ABOUT US</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan tellus eu congue est.</p>
+  </section>
+
+  <section class="games" id="Games">
+    <h2>OUR GAMES</h2>
+    <div class="game-grid">
+      <div class="game-card">
+        <img src="images/dark-hunter.png" alt="Dark Hunter" />
+        <h3>DARK HUNTER</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="game-card">
+        <img src="images/warzone.png" alt="Warzone" />
+        <h3>WARZONE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="game-card">
+        <img src="images/desert-hunter.png" alt="Desert Raid" />
+        <h3>DESERT RAID</h3>
+        <p>Desert naide game aslipmet amet.</p>
+      </div>
+    </div>
+    <div class="game-grid" id="more-games">
+      <div class="game-card">
+        <img src="images/cyber-blitz.png" alt="Cyber Blitz" />
+        <h3>CYBER BLITZ</h3>
+        <p>High-tech chaos in futuristic cities.</p>
+      </div>
+      <div class="game-card">
+        <img src="images/sky-legends.png" alt="Sky Legends" />
+        <h3>SKY LEGENDS</h3>
+        <p>Rule the skies in aerial combat.</p>
+      </div>
+      <div class="game-card">
+        <img src="images/phantom-ops.png" alt="Phantom Ops" />
+        <h3>PHANTOM OPS</h3>
+        <p>Stealth missions and elite ops gameplay.</p>
+      </div>
+    </div>
+
+    <button class="view-all" onclick="showMoreGames()">VIEW ALL</button>
+    <button class="view-less" onclick="showLessGames()" style="display: none;">VIEW LESS</button>
+  </section>
+
+  <section class="news" id="News">
+    <h2>LATEST NEWS</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <span class="date">APRIL 21, 2024</span>
+        <img src="images/news1.jpg" alt="News 1" />
+      </div>
+      <div class="news-card">
+        <img src="images/news2.jpg" alt="News 2" />
+      </div>
+      <div class="news-card">
+        <img src="images/news3.jpg" alt="News 3" />
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="contact">
+    <p>Follow GDes Club, IIT Guwahati:</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/gdes_esports.iitg/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon" />
+      </a>
+      <a href="https://www.linkedin.com/company/gamedev-and-esports-iitg" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg " alt="LinkedIn" class="social-icon" />
+      </a>
+      <a href="https://gdesiitg.itch.io/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="social-icon" id="ghub"/>
+      </a>
+    </div>
+    <p>&copy; 2025 GameDev & Esports Club, IIT Guwahati</p>
+  </footer>
+</body>
+</html>

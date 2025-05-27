@@ -19,14 +19,20 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background: transparent;
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 10;
 }
 
 
 .logo {
-  height: 50px;
+  height: 70px;
+  transition: 0.2s ease-in;
+  border-radius: 10px;
+}
+
+.logo:hover{
+  transform: scale(1.1);
 }
 
 .nav-links {
@@ -98,9 +104,11 @@ body {
 }
 
 .about p {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   color: #e0e0e0;
+  font-size: 20px;
+  text-shadow: 0 0px 40px #4537c8;
 }
 
 
@@ -157,9 +165,14 @@ section {
   text-align: center;
 }
 
-.game-card img {
+.game-card-img {
   width: 100%;
   border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+
+.game-card-img:hover {
+  transform: scale(1.05);
 }
 
 .view-all,
@@ -187,9 +200,14 @@ section {
   text-align: center;
 }
 
-.news-card img {
+.news-card-img {
   width: 100%;
   border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.news-card-img:hover {
+  transform: scale(1.1);
 }
 
 .date {
@@ -217,9 +235,6 @@ section {
   display: inline-block;
 }
 
-#ghub{
-    filter: invert(1);
-}
 
 .footer .social-links img.social-icon {
   width: 30px;
